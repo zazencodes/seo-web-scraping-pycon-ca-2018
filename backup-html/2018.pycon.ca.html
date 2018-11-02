@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PyCon Canada 2018</title>
+<!-- Our custom CSS --><link rel="stylesheet" href="style.css">
+<!-- Font Awesome 4.7 --><link rel="stylesheet" href="static/font-awesome.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64922826-6"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-64922826-6');
+    </script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container">
+            <a class="navbar-brand" href="https://2018.pycon.ca/">
+                <img src="https://d33wubrfki0l68.cloudfront.net/13b0a604db36643231c721dad5c7307922a5e817/b87ff/images/logo.svg" class="d-inline-block align-center" alt="PyCon Canada 2018" height="20px"></a>
+            <!-- <div class="navbar-brand navbar-address d-none d-lg-block">
+                <p>
+                    Chestnut Residence, Toronto, ON, Canada
+                    <br>
+                    November 10-13, 2018
+                </p>
+            </div> -->
+
+            <!-- Mobile button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navigation links -->
+                <ul class="navbar-nav ml-auto">
+<li class="nav-item">
+                                    <a class="nav-link text-center" href="code-of-conduct/">
+                                            <span class="nav-mobile-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                                        <span class="">Code of Conduct</span>
+                                        <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                    </a>
+                                </li>
+                        
+                            <li class="nav-item text-center dropdown">
+                                <a class="nav-link" href="#" id="menu-fa-archive" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="nav-mobile-icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+                                    <span class="">Event</span>
+                                    <span class="nav-mobile-icon"><i class="fa fa-level-down" aria-hidden="true"></i></span>
+                                </a>
+                                <div class="dropdown-menu nav-mobile-submenu text-center text-lg-left" aria-labelledby="menu-fa-archive">
+                                        <a class="dropdown-item nav-mobile-sublink" href="about/">
+                                                <span class=""><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                            <span class="">About</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="sponsors/">
+                                                <span class=""><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+                                            <span class="">Sponsors</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="schedule-day-1/">
+                                                <span class=""><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                            <span class="">Schedule Day-1</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="schedule-day-2/">
+                                                <span class=""><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                            <span class="">Schedule Day-2</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-item text-center dropdown">
+                                <a class="nav-link" href="#" id="menu-fa-users" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="nav-mobile-icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                                    <span class="">Participate</span>
+                                    <span class="nav-mobile-icon"><i class="fa fa-level-down" aria-hidden="true"></i></span>
+                                </a>
+                                <div class="dropdown-menu nav-mobile-submenu text-center text-lg-left" aria-labelledby="menu-fa-users">
+                                        <a class="dropdown-item nav-mobile-sublink" href="registration/">
+                                                <span class=""><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                                            <span class="">Registration</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="childcare/">
+                                                <span class=""><i class="fa fa-user-plus" aria-hidden="true"></i></span>
+                                            <span class="">Childcare</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="fa/">
+                                                <span class=""><i class="fa fa-money" aria-hidden="true"></i></span>
+                                            <span class="">Financial Aid</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="volunteer/">
+                                                <span class=""><i class="fa fa-user-plus" aria-hidden="true"></i></span>
+                                            <span class="">Volunteer</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-item text-center dropdown">
+                                <a class="nav-link" href="#" id="menu-fa-info-circle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="nav-mobile-icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                                    <span class="">Information</span>
+                                    <span class="nav-mobile-icon"><i class="fa fa-level-down" aria-hidden="true"></i></span>
+                                </a>
+                                <div class="dropdown-menu nav-mobile-submenu text-center text-lg-left" aria-labelledby="menu-fa-info-circle">
+                                        <a class="dropdown-item nav-mobile-sublink" href="code-of-conduct/">
+                                                <span class=""><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                                            <span class="">Code of Conduct</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a class="dropdown-item nav-mobile-sublink" href="mailto:organizers@pycon.ca">
+                                                <span class=""><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                            <span class="">Email us</span>
+                                            <span class="nav-mobile-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                        </a>
+                                </div>
+                            </li>
+                        
+                    <!-- Language selection -->
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="fr/">
+                                <span class="nav-mobile-icon"><i class="fa fa-language" aria-hidden="true"></i></span>
+                                <span class="">FR</span>
+                                <span class=""><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="registration/" class="btn btn-midnight-blue navigation-button">
+                                Ticket
+                            </a>
+                        </li>
+                </ul>
+</div>
+        </div>
+    </nav><!-- Page Header --><!-- Page Content --><div>
+<p></p>
+<div class="banner-wrapper">
+    <div class="banner-container p-0">
+        <div id="front_carousel" class="carousel slide" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#front_carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#front_carousel" data-slide-to="1"></li>
+            </ol> -->
+            <div class="carousel-inner">
+                <div class="carousel-item  active w-100">
+                    <div class="banner-pycon"></div>
+                    <div class="carousel-caption d-none d-block">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/86bcfb2361deb5e91b1168b4e0107add689bfcbc/7ab20/images/logo_perspective.svg" class="d-block mx-auto banner-pycon-logo" alt="PyCon Canada 2018"><br><p>Conference: 10-11 November 2018<br>Sprints: 12-13 November 2018</p>
+                            <a class="btn btn-outline-red pycon-buy-button" href="registration" role="button">Buy a ticket</a>
+                            <a class="btn btn-outline-red pycon-buy-button" href="schedule-day-1/" role="button">Schedule</a>
+                    </div>
+                </div>
+                <div class="carousel-item w-100">
+                    <div class="banner-city"></div>
+                    <div class="carousel-caption d-none d-block">
+                        <h2 class="display-4 city-banner">Where is the event?</h2>
+                        <h4 class="city-heading">Toronto, Ontario</h4>
+                        <p>Pycon Canada is being held at the Chestnut Residence &amp; Conference Centre</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#front_carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#front_carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/7fe77410bf565a166898692e1edfb9343a424e84/3c04b/images/chestnut_hotel_logo.png" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Where is the event?
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">Chestnut Residence &amp; Conference Centre</h6>
+            <p class="speaker-description">We are hosting Pycon Canada 2018 at the wonderful
+    Chestnut Residence &amp; Conference Centre. Located adjacent to the city landmark of
+    Yonge and Dundas Square and directly north of the city's Financial District,
+    Chestnut Conference Centre is in the heart of the downtown core. It is only
+    a 5 minute walk from the St. Patrick subway station, 10 minute walk from
+    Eaton Centre and a 10 minute walk from Toronto’s Financial District.</p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 order-1 order-md-2 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/326413544b4000e245893a4019015fb8979cf3f9/71b07/images/double_tree.jpg" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 order-2 order-md-1 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Any accommodations available?
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">DoubleTree by Hilton Hotel Toronto Downtown</h6>
+            <p class="speaker-description">Set in the center of Toronto's financial, government, research, medical,
+    education and shopping districts, DoubleTree by Hilton Hotel Toronto Downtown offers a quiet
+    retreat in the heart of a vibrant, urban location. They have generously offered our visitors
+    a special rate of $169+tax/night. <a href="https://secure3.hilton.com/en_US/dt/reservation/book.htm?inputModule=HOTEL&amp;ctyhocn=YTOCSDT&amp;spec_plan=CDTPYC&amp;arrival=20181109&amp;departure=20181111&amp;cid=OM,WW,HILTONLINK,EN,DirectLink&amp;fromId=HILTONLINKDIRECT">
+    You can use this link to make your reservation.</a></p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/ca847ff33287657d65fa15cca7812dc0778041d1/8bef7/images/childcare_image.jpg" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Childcare
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">provided by improvcare</h6>
+            <p class="speaker-description">Childcare is available for the duration of the conference (Nov 10-11) and included in the ticket price. You need to buy a ticket in order to apply for childcare, when you buy a ticket you'll get an option to receive childcare package. Age limit for childcare is 10 years old.
+
+    <a href="http://www.improvcare.ca/">More information about the childcare provider.</a>
+    </p>
+        </div>
+    </div>
+</div>
+
+<br><p><br></p>
+<div class="container">
+    <h2 class="text-center display-4 pb-4 post-mid-title">Keynote Speakers</h2>
+</div>
+<p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 order-1 order-md-2 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/90c4a5f4fc23ad5fb32aba8bc41f4eab3f9fcd16/bc81e/images/speakers/froilan_styled.png" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 order-2 order-md-1 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Froilán Irizarry
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">Python Lover</h6>
+            <p class="speaker-description">Froilán Irizarry is a developer, community builder and
+    recovering entrepreneur. He’s worked with enterprise companies, government
+    and startups using various technologies, focusing the last couple of years
+    on Python and Javascript. Over the last four years he’s helped organise a
+    number of tech events, including Fullstack Nights and PyCaribbean 2017. In
+    the past year he worked with the US Digital Service completing his term,
+    co-founded the Maria Tech Brigade, and joined the Code.gov team where he
+    now helps US federal agencies share and open source government code.</p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/e4a3cb8f9531024f5da6ffb2b6db2bf8d1606228/cf2a0/images/speakers/holden_styled.png" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Holden Karau
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">Python Lover</h6>
+            <p class="speaker-description">Holden Karau is a transgender Canadian open source developer
+    advocate @ Google with a focus on Apache Spark, Airflow, and related "big
+    data" tools. She is the co-author of Learning Spark, High Performance
+    Spark, and another Spark book that's a bit more out of date. She is a
+    committer and PMC on Apache Spark and committer on SystemML &amp; Mahout
+    projects. She was tricked into the world of big data while trying to
+    improve search and recommendation systems and has long since forgotten
+    her original goal.</p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 order-1 order-md-2 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/8f81795b50c6054fdff3a9feba8b2bc1fdbf9941/3df0a/images/speakers/solmaz_styled.png" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 order-2 order-md-1 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Solmaz Shahalizadeh
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">Python Lover</h6>
+            <p class="speaker-description">Solmaz is the VP of Data Science and Engineering at Shopify
+    leading the data organization. Her teams build the data platform and the machine
+    learning solutions that power Shopify's internal and merchant facing data products
+    including Shopify's real-time Order Fraud Analysis, Shopify Capital and Shopify
+    Home. Her and her teams build majority of their data solutions using Python (and
+    Spark) and she is a big fan of the Python community. With multiple graduate degrees
+    in computer science and machine learning, prior to joining Shopify, she worked at
+    Morgan Stanley as an analyst and at McGill university as a cancer researcher, applying
+    machine learning techniques to predict breast cancer outcome. Solmaz has a passion for
+    building high quality data products that delight users and solve real world problems.</p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/7d1f5a70b4583585a7be07ee29ede9f3ac7d65e1/0e84a/images/speakers/graham_styled.png" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Graham Toppin
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">Python Lover</h6>
+            <p class="speaker-description">Graham is the VP of Applied Sciences and Research at Wave, where he’s 
+    responsible for the integration of new technologies and research areas into the company, 
+    primarily Machine Learning and Artificial Intelligence. Over the years, Graham has built, 
+    led and managed teams from 5 to 100 as a founder, manager, executive and board member. He has 
+    a passion for solving complex problems by creating fun, inclusive, high performing teams. In 
+    previous lives, he’s built multi-petabyte systems, found homes for lost cats and puppies, done 
+    stand up comedy at weddings and night clubs (including an unfortunately momentous poetry jam) 
+    and taken himself far too seriously.</p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<div class="mailing-wrapper">
+    <div class="container">
+        <div class="row mt-3 mb-3 pt-4 pb-3">
+            <div class="col text-center">
+                <h3 class="mail-heading text-red">Subscribe to our mailing list</h3>
+                <p>Receive all event details as they become available</p>
+                <a class="btn btn-primary mail-button" href="http://eepurl.com/bs9mG9" role="button">Subscribe</a>                
+            </div>
+        </div>
+    </div>
+</div>
+<img src="https://d33wubrfki0l68.cloudfront.net/a0a291bc838679a086b1f3dfac522cef39141b69/5511b/images/2018_pycon_building.svg" class="rounded float-right mail-image-building"><hr class="border-0 spacer">
+<p></p>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md col-xl-4 text-center">
+                <img src="https://d33wubrfki0l68.cloudfront.net/41e96879fceaacac12e7fc11706f4b1c403dd33a/e9ddb/images/myles-braithwaite-img-0376.jpg" class="img-fluid">
+</div>
+        <div class="col-md col-xl-8 pt-3 speaker-snippet">
+            <h2 class="text-red mb-0">
+                Development Sprints
+            </h2>
+            <h6 class="speaker-snippet-sub-heading pb-3">12th-13th, November, 2018 at <a href="http://dx.org">The Design Exchange</a> 234 Bay Street in Toronto</h6>
+            <p class="speaker-description"></p>
+<p>PyCon Canada Development Sprints are two days of intensive learning and development on an open source project of your choice, in a team environment. It’s a time to come together with colleagues, old and new, to share what you’ve learned and apply it to an open source project.</p>
+<p> PyCon Canada provides the space and infrastructure (network, power, tables &amp; chairs); you bring your skills, humanity, and brainpower (oh! and don’t forget your computer).<br> Some of things you might end up doing during the sprint: <br></p>
+<ul>
+<li>Fix bugs
+</li>
+<li>Write tests
+</li>
+<li>Improve documentation
+</li>
+<li>Write code
+</li>
+</ul>
+<p>It’s a great way to contribute to the community, learn about coding and open-source contribution, and have fun!<br> To learn more about some of the projects that are taking place during the Sprint days, check out our wiki: <a href="https://github.com/pyconca/2018-wiki/wiki/Sprints">https://github.com/pyconca/2018-wiki/wiki/Sprints</a></p>
+        </div>
+    </div>
+</div>
+
+<br><p></p>
+<hr class="border-0 spacer">
+<div class="container text-center sponsor-overview">
+    <h3 class="display-3 sponsors-heading text-red">Our Sponsors</h3>
+
+    <p class="lead">We thank our fantastic sponsors who help make this event possible. <a href="mailto:sponsorship@pycon.ca">Get in touch</a> if your organization would like to support PyCon Canada 2018.</p>
+
+
+    <!-- TODO: Arrange sponsors by type, for now; cluster together -->
+    <div class="row">
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/a6c6887f3f9bc7a0eef6aefb4294c22c9e138fa2/8e052/images/sponsors/tucows.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/06fafad28ffad3ed62174ea9e2c13f089b5decd0/8c86d/images/sponsors/freshbooks.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/d4ef81b442f90d3bb6a9cca0e2598e8d7e29124c/17ebd/images/sponsors/cbc.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/b0c8da56cab372d3bb1a77ac2da84fa01d43976b/086c2/images/sponsors/microsoft.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/b7aee44bd8ce887b2d70aa7c676a5367b8def0fa/4df08/images/sponsors/bungalow.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-2" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/050758c2b19e89a7ba2a5b1db86da2fcbaac5bc4/f2e76/images/sponsors/cse.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-3" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/9b0a0d7d896f3b8b28655974a0c42a4ea89bb68b/353a5/images/sponsors/mozilla.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/3cb6f07e9b3cad3ea7725ebb41f00a89e87a8309/83674/images/sponsors/oca.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/70df71c5a25dd793e1bbab3028ee3dc5b9990908/5db26/images/sponsors/ada.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/9263ffef38faecce5614dae53947822a4ebc1802/63efb/images/sponsors/wave.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/40354e9191bf933eb3338000a27cce6db4931d6f/819da/images/sponsors/shopify.svg" class="w-100"></a>
+                </div>
+                <div class="col-md-6 col-lg-4 p-5">
+                    <a href="sponsors/#-1" class="w-100 h-100 d-flex justify-content-center">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/412e36f4f197bdef7cc9ea4d8111ff7b646c28ce/73d56/images/sponsors/psf.svg" class="w-100"></a>
+                </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <a class="btn btn-dark-cyan btn-lg btn-block mt-1" href="mailto:sponsorship@pycon.ca" role="button">
+                Contact our Sponsorship Committee
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <a class="btn btn-secondary btn-lg btn-block mt-1" href="static/pyconca2018-prospectus.pdf" role="button">
+                Download our sponsorship prospectus.
+            </a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+    <!-- Post Navigation links -->
+
+
+    <!-- Footer -->
+        <hr class="border-0 spacer">
+<footer class="jumbotron jumbotron-fluid bg-midnight-blue text-light mb-0"><div class="container">
+            <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+<li class="text-red">Event</li>
+                            <li><a href="about/" class="text-white">About</a></li>
+                            <li><a href="sponsors/" class="text-white">Sponsors</a></li>
+                        </ul>
+</div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+<li class="text-red">Participate</li>
+                            <li><a href="registration/" class="text-white">Registration</a></li>
+                            <li><a href="fa/" class="text-white">Financial Aid</a></li>
+                            <li><a href="http://eepurl.com/bs9mG9" class="text-white">Newsletter</a></li>
+                            <li><a href="volunteer/" class="text-white">Become a Volunteer</a></li>
+                        </ul>
+</div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+<li class="text-red">Information</li>
+                            <li><a href="code-of-conduct/" class="text-white">Code of Conduct</a></li>
+                            <li><a href="mailto:organizers@pycon.ca" class="text-white">Contact</a></li>
+                            <li><a href="http://us11.campaign-archive.com/home/?u=5cc0d84ff77b9bb778875c680&amp;id=d2a954e0b6" class="text-white">Newsletter Archive</a></li>
+                        </ul>
+</div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+<li class="text-red">Follow us</li>
+                            <li><a href="https://facebook.com/pyconca" class="text-white">Facebook</a></li>
+                            <li><a href="https://twitter.com/pyconca" class="text-white">Twitter</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCclkPrurwUP_ajqi3vDTNDg" class="text-white">Youtube</a></li>
+                        </ul>
+</div>
+            </div>
+        </div>
+    </footer><!-- JavaScript for Bootstrap --><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="js/jquery-3.3.1.slim.min.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Python Bytes podcast delivers headlines directly to your earbuds.">
+    <meta name="author" content="Michael Kennedy (@mkennedy)">
+    <link rel="shortcut icon" href='/static/img/favicon.png?cache_id=77921e618ece61e6cf7e4c8e17e0a26c'>
+
+    <title>Python Bytes Podcast</title>
+    <link rel="alternate" type="application/rss+xml"
+          href="https://pythonbytes.fm/episodes/rss"
+          title="Python Bytes Episodes">
+
+    <link href='/static/bower_components/bootstrap-css/css/bootstrap.min.css?cache_id=2f624089c65f12185e79925bc5a7fc42'
+          rel="stylesheet">
+    <link href='/static/bower_components/font-awesome/css/font-awesome.min.css?cache_id=269550530cc127b6aa5a35925a7de6ce'
+          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src='/static/bower_components/html5shiv/dist/html5shiv.min.js?cache_id=40bd440d29b3a9371b0c63fec41ee64f'></script>
+    <script src='/static/bower_components/respond/dest/respond.min.js?cache_id=afc1984a3d17110449dc90cf22de0c27'></script>
+    <![endif]-->
+
+    <link href='/static/css/landing-page.css?cache_id=f93505e711c7acb70aa81e1e37d954ac'
+          rel="stylesheet">
+    <link href='/static/css/site.css?cache_id=8162a5e3f7b804fe9bb287ad53693bcb' rel="stylesheet">
+
+    <div></div>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav image" href="/">
+                <img src="/static/img/logo.png?cache_id=391cb49247369a67c4be78b27f2b3cd5"
+                     class="logo-image hidden-xs img"/>
+            </a>
+            <a class="navbar-brand topnav name" href="/">
+                <span class="logo-var">PythonBytes</span><span class="logo-operator">[</span>'<span class="logo-key">headlines</span>'<span
+                    class="logo-operator">]</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/episodes/all">Episodes</a>
+                </li>
+                <li class="hidden-md">
+                    <a href="/home/contact">Submit news</a>
+                </li>
+                <li class="hidden-md hidden-sm">
+                    <a href="https://training.talkpython.fm/?utm_source=pythonbytes"
+                       title="World class Python courses at Talk Python Training"
+                       target="_blank">Courses</a>
+                </li>
+
+                <li class="hidden-sm">
+                    <a href="/friends-of-the-show">Friends of the show</a>
+                </li>
+                <li class="hidden-sm">
+                    <a href="https://talkpython.fm/?utm_source=pythonbytes"
+                       title="Talk Python To Me podcast hosted by Michael Kennedy"
+                       target="_blank">Talk Python</a>
+                </li>
+                <li class="hidden-sm">
+                    <a href="http://pythontesting.net/?utm_source=pythonbytes"
+                       title="Test and Code podcast hosted by Brian Okken"
+                       target="_blank">Test and Code</a>
+                </li>
+                <li>
+                    <a href="/search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<a href="http://do.co/python"
+   id="global-sponsor-message"
+   target="_blank"
+>
+    Brought to you by <span class="do">DigitalOcean</span>
+    - grab your $100 credit and deploy your <strong>first project for free</strong>
+</a>
+
+<div class="home">
+        <link href="/static/css/home.css?cache_id=f3c42284d7fa7fd2fdc55cc6a48ffb38" rel="stylesheet">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 banner-section">
+                    <h1 style="display: none;">Python Bytes Podcast</h1>
+                    <h2 style="display: none;">Python headlines delivered directly to your earbuds.</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+
+
+        <a name="action-links"></a>
+        <div class="content-section-a action-links">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="/episodes" class="btn btn-default btn-lg"
+                                ><i
+                                        class="fa fa fa-rss fa-fw"></i> <span
+                                        class="network-name">Episodes</span></a>
+                            </li>
+                            <li>
+                                <a href="/episodes/latest"
+                                   class="btn btn-default btn-lg"><i
+                                        class="fa fa fa-rss fa-fw"></i> <span
+                                        class="network-name">Latest Episode</span></a>
+                            </li>
+                            <li>
+                                <a href="/friends-of-the-show" class="btn btn-default btn-lg"
+                                ><i
+                                        class="fa fa-user fa-fw"></i> <span
+                                        class="network-name">Friends of the show</span></a>
+                            </li>
+                            <li class="hidden-sm">
+                                <a href="https://twitter.com/pythonbytes"
+                                   class="btn btn-default btn-lg"
+                                   target="_blank"><i
+                                        class="fa fa-twitter fa-fw"></i> <span
+                                        class="network-name">Twitter</span></a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="latest-episode"></a>
+        <div class="content-section-b latest-episode">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-7">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">Latest:
+                            #102 Structure of a Flask Project</h3>
+                        <div class="lead"></div>
+                        <br><a class="light-access-link" href="/episodes/show/102">Full
+                        details</a>
+                    </div>
+                    <div class="col-lg-1 col-sm-2" style="text-align: center;">
+                        <br><br><br>
+                        <div class="player">
+                            <audio
+                                    preload="none" controls
+                                    src="/episodes/download/102/structure-of-a-flask-project.mp3">
+                            </audio>
+                            <br>
+                            <a class="btn btn-danger"
+                               target="_blank"
+                               href="/episodes/download/102/structure-of-a-flask-project.mp3"
+                            ><i class="fa fa-soundcloud"></i> Download MP3</a>
+
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <a name="about"></a>
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">What is Python Bytes?</h3>
+
+                        <p class="lead">
+                            Python Bytes is a weekly podcast hosted by
+                            <a class="light-access-link" href="http://blog.michaelckennedy.net">Michael Kennedy</a>
+                            and <a class="light-access-link" href="http://pythontesting.net/">Brian Okken</a>.
+
+                            Python Bytes podcast delivers headlines directly to your earbuds. If you want to stay
+                            up on the Python developer news but don't have time to scour reddit, twitter, and other
+                            news sources, just subscribe and you'll get the best picks delivered weekly.
+                            <br>
+                            <br>
+                            Have feedback for the show? Send it to
+                            <a class="light-access-link" href="mailto:contact_pythonbytes@talkpython.fm">contact_pythonbytes@talkpython.fm</a>.
+                            We'd love to hear from you.
+                        </p>
+                    </div>
+                    <div class="col-sm-3 host-image-area">
+                        <img class="img img-circle host-image"
+                             src="/static/img/hosts/Michael_Kennedy.jpg?cacheId=d8ffce2ca99e7dd1e3699f4d51c7f8fd"
+                             alt="">
+
+                        <div class="host-name">Michael Kennedy</div>
+                        <div class="host-links"><a class="light-access-link" href="https://twitter.com/mkennedy"
+                                                   target="_blank">@mkennedy</a></div>
+                    </div>
+                    <div class="col-sm-3 host-image-area">
+                        <img class="img img-circle host-image"
+                             src="/static/img/hosts/brian-okken.png?cacheId=7a2a1d8675d586183aa8fa705b2b46de"
+                             alt="">
+
+                        <div class="host-name">Brian Okken</div>
+                        <div class="host-links"><a class="light-access-link" href="https://twitter.com/brianokken"
+                                                   target="_blank">@brianokken</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <a name="reviews"></a>
+        <div class="reviews content-section-b">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">What listeners think</h3>
+
+                        <div class="lead">
+
+                            <div>
+                                <blockquote class="review-text"
+                                >
+                                    <div class="review-title"
+                                    >Amazing Python podcast :)</div>
+                                        I'd highly recommend this podcast to any Python developer serious about their craft. Michael and Brian do an amazing job keeping us updated with the latest Python news. I really enjoy the format of the show and the bite-sized episodes! It's like listening to a Python newsletter with the added benefit of getting Brian's and Michael's insightful commentary. A+++, would subscribe again :-)
+                                    <footer class="review-attribution"
+                                    >Daniel Bader</footer>
+                                </blockquote>
+                            </div>
+                            <div>
+                                <blockquote class="review-text"
+                                >
+                                    <div class="review-title"
+                                    >Love the Byte-Sized Pace</div>
+                                        I'm always interested in learning about new tools so Python Bytes is right up my alley. The quick rundown of news each week is very cool and I inevitably end up going to the show notes to check out the links.
+                                    <footer class="review-attribution"
+                                    >Nikola Kantar</footer>
+                                </blockquote>
+                            </div>
+                            <div>
+                                <blockquote class="review-text"
+                                >
+                                    <div class="review-title"
+                                    >Great podcast to stay up with Python news!</div>
+                                        Michael and Brian do a wonderful job of staying on top of news in the Python world. Everything is packaged up into perfectly-sized snippets. Really helps me feel like I can keep abreast of what's going on. Love it!
+                                    <footer class="review-attribution"
+                                    >efstone</footer>
+                                </blockquote>
+                            </div>
+
+                        </div>
+                        <div class="text-muted">
+                            Do you love the show and want to tell the world?<br>
+                            <a href="/home/contact"
+                            >Send us a review</a> or post one
+                            <a href="https://itunes.apple.com/us/podcast/python-bytes/id1173690032"
+                               target="_blank">on iTunes</a>. Thanks!
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+            <!-- /.content-section-* -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">Suggest a headline</h3>
+
+                        <p class="lead">
+                            We are always on the look out for topics to cover on
+                            Python Bytes. We could use your help!<br>
+                            <br>
+                            Do you have a great idea or item to feature on the show?
+                            Send us an email!<br>
+                        </p>
+                        <div style="text-align: center; font-size: 24px;">
+                            <a class="light-access-link"
+                               href="mailto:contact_pythonbytes@talkpython.fm">contact_pythonbytes@talkpython.fm</a><br>
+                        </div>
+                        <br>
+
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive"
+                             src="/static/img/suggest_guest.png?cacheId=79daac2202ee7b06e5e8c2f7482163b7"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <div class="content-section-b" id="other-podcasts-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">Our other podcasts</h3>
+
+                        <div class="podcast-highlight">
+                            <h4><a href="https://talkpython.fm/" target="_blank"
+                            >Talk Python To Me</a></h4>
+                            <a href="https://talkpython.fm/" target="_blank"
+                            ><img src="/static/img/talk_python_logo.png" alt="Talk Python To Me podcast"
+                                  class="img img-responsive"></a><br>
+                            <a href="https://talkpython.fm/" target="_blank"
+                               class="btn btn-primary btn-lg">Try an episode &#187;</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">&nbsp;</h3>
+
+                        <div class="podcast-highlight">
+                            <h4><a href="http://pythontesting.net/" target="_blank"
+                            >Test and Code podcast</a></h4>
+                            <a href="http://pythontesting.net/" target="_blank"
+                            ><img src="/static/img/test_and_code.jpg" alt="Test and Code podcast"
+                                  class="img img-responsive"></a><br>
+                            <a href="http://pythontesting.net/" target="_blank"
+                               class="btn btn-primary btn-lg">Try an episode &#187;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <div class="clearfix"></div>
+                        <h3 class="section-heading">Go deeper: Take a Python Course</h3>
+
+                        <p class="lead">
+                            We have a wide and growing set of courses for all levels of Python
+                            experience. Whether you are interested in getting started with our
+                            <a href="https://training.talkpython.fm/courses/explore_python_jumpstart/python-language-jumpstart-building-10-apps?utm_source=pythonbytes"
+                               target="_blank">Python Jumpstart by Building 10 Apps</a>, getting into the zen with
+                            <a href="https://training.talkpython.fm/courses/explore_pythonic_code/write-pythonic-code-like-a-seasoned-developer?utm_source=pythonbytes"
+                               target="_blank">Write Pythonic Code Like a Seasoned Developer</a>, or dropping SQL and
+                            picking up MongoDB with our <a
+                                href="https://training.talkpython.fm/courses/explore_mongodb_for_python_developers_course/mongodb-for-python-for-developers-featuring-orm-odm-mongoengine?utm_source=pythonbytes"
+                                target="_blank">MongoDB for Python Developers</a> course,
+                            we have something for you!
+                        </p>
+                        <p class="lead"  style="text-align: center;">
+                            <a href="https://training.talkpython.fm/?utm_source=pythonbytes"
+                               target="_blank"
+                               class="btn btn-lg btn-success"
+                            >Find your course</a>
+                        </p>
+                        <br>
+
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <a href="https://training.talkpython.fm/?utm_source=pythonbytes"
+                           target="_blank"><img class="img-responsive"
+                                                style="border-radius: 5px; border: 1px solid dimgray;"
+                                                src="/static/img/training-logo.png?cacheId=2f0d242e827d226573ba24578318445f"
+                                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <a href="https://pragprog.com/book/bopytest/python-testing-with-pytest?utm_source=pythonbytes"
+                           target="_blank"><img class="img-responsive"
+                                                style="border-radius: 5px; border: 1px solid dimgray;"
+                                                src="/static/img/pytest-book.jpg?cacheId=438938c787a3e519ada0a8f6a9734273"
+                                                alt=""></a>
+
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+
+
+                        <h3 class="section-heading">Are you into testing?</h3>
+
+                        <p class="lead">
+                            If you are into testing, you really owe it to yourself to
+                            pick up Brian's new book: <a
+                                href="https://pragprog.com/book/bopytest/python-testing-with-pytest?utm_source=pythonbytes"
+                                target="_blank"
+                        >Python Testing with pytest: Simple, Rapid, Effective, and Scalable</a>
+                        </p>
+                        <p class="lead">
+                            For Python-based projects, pytest is the undeniable choice to test your code if you’re
+                            looking for a full-featured, API-independent, flexible, and extensible testing framework.
+                            With simple step-by-step instructions and sample code, this book gets you up to speed
+                            quickly on this easy-to-learn and robust tool.
+                        </p>
+                        <p class="lead"  style="text-align: center;">
+                            <a href="https://pragprog.com/book/bopytest/python-testing-with-pytest?utm_source=pythonbytes"
+                               target="_blank"
+                               class="btn btn-lg btn-danger"
+                            >Get the book</a>
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-* -->
+
+
+        <div class="banner" id="footer_banner">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="footer-banner">
+                        <div class="list-inline banner-social-buttons">
+                            <h3 class="connect-title">Connect with us</h3>
+                        </div>
+
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/pythonbytes"
+                                   target="_blank"
+                                   class="btn btn-default btn-lg"><i
+                                        class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="/friends-of-the-show"
+                                   class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span
+                                        class="network-name">Newsletter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://itunes.apple.com/us/podcast/python-bytes/id1173690032"
+                                   class="btn btn-default btn-lg"
+                                   target="_blank"
+                                ><i class="fa fa-apple fa-fw"></i> <span
+                                        class="network-name">iTunes feed</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.banner -->
+    </div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!--div class="col-lg-12">-->
+            <div style="text-align: center;">
+                <ul class="list-inline">
+                    <li>
+                        <a href="/episodes/all"><i class="fa fa-headphones" aria-hidden="true"></i> Episodes</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://itunes.apple.com/us/podcast/python-bytes/id1173690032"
+                           target="_blank"><i class="fa fa-apple" aria-hidden="true"></i> iTunes</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/I7itwz2ltrsxf5bfbalkkmz6voy?t%3DPython_Bytes"
+                           target="_blank"><i class="fa fa-android" aria-hidden="true"></i> Google Play</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/episodes/rss"><i class="fa fa-rss-square" aria-hidden="true"></i> Episode RSS</a>
+                        (<a href="/episodes/ogg_rss">ogg</a>)
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://training.talkpython.fm/"><i class="fa fa-leanpub" aria-hidden="true"></i>
+                            Python Courses</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/policies/privacy">Privacy</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/sponsor">Sponsor us</a>
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://twitter.com/pythonbytes" target="_blank">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            Twitter</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://www.facebook.com/talkpython" target="_blank">
+                            <i class="fa fa-facebook fa-fw"></i>
+                            Facebook</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCKPSmMfDsXTKrCZApukcJ7A" target="_blank">
+                            <i class="fa fa-youtube-play fa-fw"></i>
+                            YouTube</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://soundcloud.com/talkpython" target="_blank">
+                            <i class="fa fa-soundcloud fa-fw"></i>
+                            SoundCloud</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="mailto:pythonbytescontact@talkpython.fm" target="_blank">
+                            <i class="fa fa-envelope fa-fw"></i>
+                            Email</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy;
+                    <a href="http://pdxwebproperties.com/">PDX Web Properties, LLC</a> 2018. All
+                    Rights
+                    Reserved</p>
+
+                <p class="made-with-love text-muted small">Made with <i class="fa fa-heart"></i> in Portland, OR, USA
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div>
+    <script src='/static/bower_components/jquery-dist/jquery.min.js?cache_id=32015dd42e9582a80a84736f5d9a44d7'></script>
+    <script src='/static/bower_components/jquery-highlight/jquery.highlight.js?cache_id=070bb9eb30a0b0dad84abf67578b0bbb'></script>
+    <script src='/static/bower_components/bootstrap-css/js/bootstrap.js?cache_id=ed69cf59ee487638489ff8742a469e43'></script>
+    <script src='/static/js/site.js?cache_id=d41d8cd98f00b204e9800998ecf8427e'></script>
+</div>
+<div></div>
+
+
+<!-- GET CLICKY ANALYTICS -->
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try {
+    clicky.init(101001760);
+} catch (e) {
+}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101001760ns.gif"/></p></noscript>
+
+
+</body>
+</html>
+
