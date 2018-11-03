@@ -8,11 +8,11 @@ In this workshop, I want to show off the open-source tools we (at [Ayima](https:
 
 ### Dependencies
 
- - python (ideally 3.6+)
- - requests
- - beautifulsoup4
- - pandas
- - selenium
+ - python (3.6+)
+ - [requests](https://pypi.org/project/requests/)
+ - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+ - [pandas](https://pypi.org/project/pandas/)
+ - [selenium](https://pypi.org/project/selenium/) (+ [chromedriver](http://chromedriver.chromium.org/downloads))
 
 ### No Internet Connection?
 
